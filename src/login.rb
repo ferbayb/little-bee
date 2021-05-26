@@ -10,7 +10,6 @@ text("Welcome to Honeycomb, User!", nil)
 text("This system requires admin access.", nil)
 line_br
 preload_db
-retrieve_profile
 
 user_flag = nil
 until user_flag != nil
@@ -21,3 +20,9 @@ pass_flag = false
 until pass_flag == true
     pass_flag = check_pass(user_flag)
 end
+
+system "clear"
+
+header
+text("Your identity has been confirmed!", nil)
+text("Please navigate the application with the following menu", nil)
