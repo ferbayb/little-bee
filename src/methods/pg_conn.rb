@@ -1,23 +1,21 @@
 require 'pg'
-require_relative '../classes/user.rb'
-require_relative '../classes/child.rb'
-require_relative '../classes/parent.rb'
+require_relative '../classes/classUser.rb'
 
 def db_connect
     PG.connect( dbname: 'users_db')
 end
-    #query = "SELECT * FROM login_db WHERE user_name = '" + name + "';"
 
-def db_user
+def preload_db
     #connect to database
     db = db_connect
     #run SQL query in database. 
     query = "SELECT * FROM login_db"
-    #return each listing
     db_results = db.exec(query)
-    db_results.each do |user|
-        puts user
+    #create user object from each listing
+    db_results.each do |listing|
+        User.new(listing['id'], listing['user_name'], listing['user_pass'])
     end
+    #close connection
+    db.close
 end
 
-db_load
