@@ -17,5 +17,6 @@ def preload_db
     end
     #close connection
     db.close
+    puts "Database Loaded, Delete This Message Before Shipping"
 end
 
