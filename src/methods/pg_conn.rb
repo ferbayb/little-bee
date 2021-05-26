@@ -1,21 +1,23 @@
 require 'pg'
-def db
-    conn = PG.connect( dbname: 'users_db')
-end
+require_relative '../classes/user.rb'
+require_relative '../classes/child.rb'
+require_relative '../classes/parent.rb'
 
-def profile_by_username(name)
-    conn = db
-    query = "SELECT * FROM login_db WHERE user_name = '" + name + "';"
-    conn.exec(query) do |result|
-        result.each do |row|
-            profile = {}
-            profile['username'] = row['user_name']
-            profile['password'] = row['user_pass']
-            return profile
-        end
-        puts profile
+def db_connect
+    PG.connect( dbname: 'users_db')
+end
+    #query = "SELECT * FROM login_db WHERE user_name = '" + name + "';"
+
+def db_user
+    #connect to database
+    db = db_connect
+    #run SQL query in database. 
+    query = "SELECT * FROM login_db"
+    #return each listing
+    db_results = db.exec(query)
+    db_results.each do |user|
+        puts user
     end
-    puts profile
 end
 
-profile_by_username('Ben')
+db_load
