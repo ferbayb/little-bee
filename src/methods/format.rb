@@ -20,10 +20,15 @@ def header
     line
     line_br
 end
+
 def text(value, format)
     if format == "center"
         puts value.center(PROGRAM_WIDTH)
     else
         puts value.to_s
     end
+end
+
+def clear
+    system "clear"
 end
