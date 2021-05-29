@@ -24,7 +24,5 @@ def load_db(value)
     end
     #close connection
     db.close
-    puts "#{value} Database Loaded, Delete This Message Before Shipping"
+    #puts "#{value} Database Loaded, Delete This Message Before Shipping"
 end
-
-

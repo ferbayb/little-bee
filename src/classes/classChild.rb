@@ -1,8 +1,12 @@
+require_relative "../methods/age.rb"
+
 class ChildProfile
     @@child_by_id = {}
     @@child_by_name = []
     @@child_dob = {}
-    attr_accessor :id, :name, :dob, :gender, :guardians
+    @@children = []
+    attr_accessor :id, :name, :dob, :gender, :guardians, :age
+    #DOB RETURNS #YYYY-MM-DD
     def initialize(child)
         #child information
         @id = child['id']
@@ -10,7 +14,8 @@ class ChildProfile
         @dob = child['dob']
         @gender = child['gender']
         @guardians = {}
-
+        @age = calc_age(@dob)
+        
         #guardian 1 information
         @guardian_1_name = child['guardian_1_name']
         @guardian_1_phone = child['guardian_1_phone']
@@ -43,5 +48,8 @@ class ChildProfile
         @@child_by_id.store(@id, @name)
         @@child_by_name.push(@name)
         @@child_dob.store(@id, @dob)
+
+        #push self object to array
+        @@children.push(self)
     end
 end
