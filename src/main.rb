@@ -10,14 +10,32 @@ require_relative './classes/classChild.rb'
 def show_profile(child)
     clear
     header
+    text("Hello! My name is #{child.name}.", "center")
+    text("My date of birth is #{child.dob}.", "center")
+    text("I am a #{child.age[:year]} years, #{child.age[:month]} months old #{child.gender}.", "center")
+    line_br
     line
-    puts child.name
+    text("CONTACT DETAILS", "center")
+    line
+    text("Guardian 1", "center")
+    text("--------", "center")
+    text("#{child.guardian_1_name}", "center")
+    text("#{child.guardian_1_address}", "center")
+    text("PH: #{child.guardian_1_phone}", "center")
+    text("EMAIL: #{child.guardian_1_email}", "center")
+    line_br
+    text("Guardian 2", "center")
+    text("--------", "center")
+    text("#{child.guardian_2_name}", "center")
+    text("#{child.guardian_2_address}", "center")
+    text("PH: #{child.guardian_2_phone}", "center")
+    text("EMAIL: #{child.guardian_2_email}", "center")
 end
 
 def main
     clear
     header
-    text("Welcome to Honeycomb, User!", nil)
+    text("Welcome to Little Bee, User!", nil)
     text("This system requires admin access.", nil)
     line_br
     #connect to database
@@ -47,7 +65,10 @@ def main
     when 1
         child = retrieve_children
         next if child == "BACK"
-        show_profile(child)
+        if child != "BACK"
+            show_profile(child)
+            return false
+        end
     when 2
         exit
     end

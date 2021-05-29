@@ -16,7 +16,7 @@ end
 
 def header
     line
-    text("HONEYCOMB CHILDCARE MANAGEMENT SYSTEM", "center")
+    text("LITTLE BEE CHILDCARE MANAGEMENT SYSTEM", "center")
     line
     line_br
 end

@@ -136,7 +136,7 @@ def select_sorted_children(nav)
         # each child object has @age paramater, sort @age between x < age < y into respective rooms. 
         filtered = ChildProfile.class_variable_get(:@@children).select { |child| child.age[:year] >= age_min && child.age[:year] <= age_max };
         filtered = filtered.sort { |one, two| (one.age[:year]*12) + one.age[:month] + (one.age[:day]/100.0) <=> (two.age[:year]*12) + two.age[:month] + (two.age[:day]/100.0) }
-        sorted.push filtered.map { |child| "#{child.name} | #{child.age[:year]} years, #{child.age[:month]} months and #{child.age[:day]} days. "}
+        sorted.push filtered.map { |child| "#{child.name}, #{child.age[:year]} years, #{child.age[:month]} months and #{child.age[:day]} days old."}
     when 4
         return "BACK"
     end
@@ -153,10 +153,9 @@ def select_sorted_children(nav)
         proper_name = selection.split(" | ")[1]
         selected_child = ChildProfile.class_variable_get(:@@children).find { |child| child.name == proper_name}
     when "ROOM"
-        proper_name = selection.split(" | ")[0]
+        proper_name = selection.split(", ")[0]
         selected_child = ChildProfile.class_variable_get(:@@children).find { |child| child.name == proper_name}
     end
-
     return selected_child;
 end
 end
