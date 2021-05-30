@@ -83,6 +83,7 @@ bash little_bee.sh
 In a CLI with BASH/ZSH.
 Ruby (2.7.0+) and Bundler are also required. 
 To find out how to install Ruby, click [here](https://www.ruby-lang.org/en/downloads/).
+
 To find out how to install Bundler, click [here](https://bundler.io/).
 
 If for some reason you encounter any issues with the bash script, navigate to the file directory "src" within the project in your CLI and input the following commands.
