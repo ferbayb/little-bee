@@ -1,0 +1,212 @@
+commit e85954b3caba5fcf704962cf86e0b2913b3d1423
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 23:04:21 2021 +1000
+
+    Trello Link
+
+commit bb04af32e4919506ecaa43b793b0815664d87001
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 23:00:45 2021 +1000
+
+    Naming Fixes
+
+commit a1e5016443ec1692dd77a12ee919c32035b8a02e
+Merge: bfea177 8342c0e
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 22:58:58 2021 +1000
+
+    Trello Screenshots
+
+commit bfea177664b78f3699e798b08549d59470b8fb16
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 22:57:55 2021 +1000
+
+    Trello Screenshots
+
+commit 8342c0e48398575122dae19580b61174b61fb25a
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 22:57:25 2021 +1000
+
+    Update README.md
+
+commit 307da4a438256d58e22f25a3aea5a4b03b3a06f0
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 21:53:38 2021 +1000
+
+    Update README.md
+
+commit 4c5f911618fb1794458bcf96f3d87ed9e6df045b
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 21:52:12 2021 +1000
+
+    Update README.md
+
+commit 4db6e8a88da4bda8bb96b947eefe93399963b242
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 21:51:43 2021 +1000
+
+    Update README.md
+
+commit 2f9344c6cc38f9d2990814b6b87e15f8bdd046bd
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 21:48:34 2021 +1000
+
+    Update README.md
+
+commit 5a4143b95341a70ccdbfe6ac95240da189b2ca49
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 21:45:33 2021 +1000
+
+    add README fix
+
+commit 7066474dc875aff599698fce6d155f2bfc2eb787
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 21:44:58 2021 +1000
+
+    add README fix
+
+commit f2a87d3f360c3448f0336cc173ba7dffd03201f8
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 21:43:57 2021 +1000
+
+    add README fix
+
+commit 59bc6fdcc4f2beb9738113f789170123911008ef
+Merge: cb66765 76bdffa
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 21:41:59 2021 +1000
+
+    Merge branch 'main' of https://github.com/flintzb/little-bee
+
+commit cb66765d664a9e67c43a55dd0a00c994f8d4d3e3
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 21:41:45 2021 +1000
+
+    add screenshots
+
+commit 76bdffa7cf1432bfc97c7ea908a856abd7acb37d
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 21:36:46 2021 +1000
+
+    Update Readme
+
+commit 7c90cbc643a6977ff3e18b4c137eb807f12f0b9a
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 20:18:59 2021 +1000
+
+    Rename gemfile to Gemfile
+
+commit 41506d64c78bdd0e8fd0572f8ac530b51324c25d
+Merge: 17d0c64 807613d
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 20:17:55 2021 +1000
+
+    gemfile naming fix
+
+commit 17d0c644f6c01524625e19a76271f1a505229978
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 20:16:40 2021 +1000
+
+    gemfile naming fix
+
+commit 717361d11ad557cea32e9760ae1be73766f13af5
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 20:08:34 2021 +1000
+
+    shell script fix
+
+commit 807613d2e021150be4237f0db1ef4e26657ba7db
+Author: Ben F <81123385+flintzb@users.noreply.github.com>
+Date:   Sun May 30 20:03:16 2021 +1000
+
+    Update README.md
+
+commit fcae78b8f345307e7b6188a7e6e4c748a8bea0ef
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 18:57:15 2021 +1000
+
+    add gitlog.txt
+
+commit 7f4367db9d4bfb1a3b3577c34208166153a13846
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 17:54:34 2021 +1000
+
+    add bash script
+
+commit 0b50cb98f10238434a0cacf250089dc07dd78245
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 17:09:30 2021 +1000
+
+    add colorized
+
+commit 12d1553288c77c64e3cdc0d01a4ec6aa0bc013b0
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 12:48:19 2021 +1000
+
+    add database files
+
+commit 8366b235a40454d50043499fb53183154dce9cc5
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 01:43:02 2021 +1000
+
+    add profile functionality
+
+commit b76658600281565c55c0f167c0493db7c4835453
+Author: Ben F <flintbee@icloud.com>
+Date:   Sat May 29 23:48:04 2021 +1000
+
+    add rooms and age functionality
+
+commit 9979ccb354afd8d308b81ce268acbc66d17f184b
+Author: Ben F <flintbee@icloud.com>
+Date:   Sat May 29 08:03:40 2021 +1000
+
+    add sorting functionality
+
+commit f2ea13985e4e7a5a9c8b0c34e3a83a39feedaa93
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 05:49:10 2021 +1000
+
+    add navigation menu prompt
+
+commit e26a0ec139cb7edfa3333b81f3c9d37308c39a2e
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 05:42:48 2021 +1000
+
+    add working username and password verification algorithms
+
+commit f6f1ff3b31e3bb91e0ab7cf62c9df5344e521dec
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 02:30:53 2021 +1000
+
+    add working database preload and class connection
+
+commit 487e4c1aab78f7d54d853e0906137303d7f43e11
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 01:00:03 2021 +1000
+
+    add individual database loading
+
+commit 1d34d476923baec71c12e061d67e460f909b10c3
+Author: Ben F <flintbee@icloud.com>
+Date:   Wed May 26 19:51:51 2021 +1000
+
+    add postgres connection
+
+commit 768b326ff870992f319ef2768f20dae217a7a165
+Author: Ben F <flintbee@icloud.com>
+Date:   Tue May 25 12:46:41 2021 +1000
+
+    add Family class
+
+commit 094865e73f4cab2a7a105aa2df5cee8c98b09c9c
+Author: Ben F <flintbee@icloud.com>
+Date:   Mon May 24 20:16:42 2021 +1000
+
+    add initial file structure
+
+commit 59456cfb1ed4d7f2551420b79bbf7a2dce0da4cb
+Author: Ben F <flintbee@icloud.com>
+Date:   Mon May 24 20:09:55 2021 +1000
+
+    Initial commit
