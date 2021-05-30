@@ -81,7 +81,7 @@ def select_sorted_children(nav)
     # Sort alphabetically by name
     when 1
       unsorted = ChildProfile.class_variable_get(:@@child_by_name)
-      sorted.push(unsorted.sort)
+      sorted.push(sort(unsorted))
       sorted_by = 'NAME'
 
     # Sort numerically by ID.
@@ -151,7 +151,6 @@ def select_sorted_children(nav)
 
     selection = PROMPT.select("Viewing children by #{sorted_by}:".colorize(:magenta).on_light_white, sorted, filter: true, per_page: 10,
                                                                                                              active_color: :red)
-
     return 'BACK' if selection == 'BACK'
 
     selected_child = nil
@@ -167,4 +166,8 @@ def select_sorted_children(nav)
     end
     return selected_child
   end
+end
+
+def sort(value)
+  return value.sort
 end
