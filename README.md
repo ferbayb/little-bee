@@ -29,17 +29,17 @@ In short, the target audience are employees of the childcare industry who are re
 Little Bee is connected to PostgreSQL in two instances. In this first instance, we take the response of the client for "username" and "password" fields and compare them to a previously pulled hash of both fields. Doing it this way, secures our application from SQL injection concerns. 
 If the entered username and password match, the user will be redirected to the next stage of the application. 
 If not, they will be prompted to try again.
-</br>
+<br>
 ![Feature 1 Screenshot](./docs/SS1.png)
 
 ### View All Children & Filter
 Once the identity of the user has been confirmed, they will be able to select how they would like to view the database. They can view by Room, ID or Name, each triggering an algorithm that will sort and generate each child as a menu option in a sorted manner. 
-</br>
+<br>
 ![Feature 2 Screenshot](./docs/SS2.png)
 
 ### View Child Information
 Last but not least, once a child has been selected through any of the sorting algorithms above, their entire profile will be generated with accurate, real time data.
-</br>
+<br>
 ![Feature 3 Screenshot](./docs/SS3.png)
 
 ## User Interactions
