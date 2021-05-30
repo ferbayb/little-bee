@@ -68,8 +68,26 @@ Please navigate the application through the following menu:
 
 ![Control Flow of Little Bee CCMS](./docs/CONFLOW.png)
 
-## Implemenation (Trello)
+## Implemenation - Evolution of Trello
+![Trello 0](./docs/T0.png)
 
+
+![Trello 1](./docs/T1.png)
+
+
+![Trello 2](./docs/T2.png)
+
+
+![Trello 3](./docs/T3.png)
+
+
+![Trello 4](./docs/T4.png)
+
+
+![Trello 5](./docs/T5.png)
+
+
+![Trello 6](./docs/T6.png)
 
 ## Installation
 
