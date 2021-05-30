@@ -1,6 +1,6 @@
 # Little Bee - Childcare Management System v0.1
 ---
-A CLI program built completely in Ruby. Intended for learning. 
+A CLI program built completely in Ruby.
 By Ben Flint.
 
 # Github Link
@@ -10,7 +10,8 @@ https://github.com/flintzb/little-bee
 ## Software Development Plan
 ---
 ### Description
-Little Bee is a CLI application that allows the client to speak to and read from a database full of information about children within a childcare centre with speed and ease. Each child has a profile that contains information about them and their family.
+Little Bee is a CLI application that allows the client to speak to and read from a database full of information about children within a childcare centre with speed and ease. Each child has a profile that contains information about them and their family, and this information is dynamically pulled from the database at each instance. You could theoretically replace the database with any other database (that has the same column names) and it will work the same!
+This application was developed with the intention of learning how to manipulate a database with Ruby, specifically PostgresQL. It's NOT a requirement for the client to host their own instance of PostgresQL as I have set up a server online using DBaaS providers. I personally used Azure, but there other providers such as AWS, Heroku & ElephantSQL that offer similar offerings.
 ### Purpose
 Information management plays a large role within childcare as the industry is surrounded by laws and regulations, as well as being a sensitive industry in general. Records need to be kept for a minimum of 3 years even after a child has left and fast, simple access to information can play a crucial role in managing the information input and output of a business that may need to cater for over 100 children on a daily basis. The application isn't designed to look pretty, but is designed to minimise the steps required to finding access the desired information about a child. 
 
@@ -25,8 +26,18 @@ In short, the target audience are employees of the childcare industry who are re
 ## Features
 ---
 ### Secure Login System
+Little Bee is connected to PostgreSQL in two instances. In this first instance, we take the response of the client for "username" and "password" fields and compare them to a previously pulled hash of both fields. Doing it this way, secures our application from SQL injection concerns. 
+If the entered username and password match, the user will be redirected to the next stage of the application. 
+If not, they will be prompted to try again.
+![Feature 1 Screenshot](./docs/SS1.png)
+
 ### View All Children & Filter
+Once the identity of the user has been confirmed, they will be able to select how they would like to view the database. They can view by Room, ID or Name, each triggering an algorithm that will sort and generate each child as a menu option in a sorted manner. 
+![Feature 2 Screenshot](./docs/SS2.png)
+
 ### View Child Information
+Last but not least, once a child has been selected through any of the sorting algorithms above, their entire profile will be generated with accurate, real time data.
+![Feature 3 Screenshot](./docs/SS3.png)
 
 ## User Interactions
 ---
@@ -52,10 +63,27 @@ Please navigate the application through the following menu:
 
 ## Control Flow Diagram
 ---
-![Control Flow of Little Bee CCMS](./docs/.png)
+![Control Flow of Little Bee CCMS](./docs/CONFLOW.png)
 
-## Implemenation
+## Implemenation (Trello)
 ---
 
 ## Installation
 ---
+To run this application simply put 
+```
+bash little_bee.sh
+```
+in a CLI with BASH/ZSH & Ruby (2.7.0+) installed. 
+To find out how to install Ruby, click [here](https://www.ruby-lang.org/en/downloads/).
+
+If for some reason you encounter any issues with the bash script, navigate to the file directory "src" within the project in your CLI and input the following commands.
+```
+gem install bundler
+```
+```
+bundle install
+```
+```
+ruby main.rb
+```
