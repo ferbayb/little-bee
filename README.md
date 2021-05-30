@@ -30,16 +30,19 @@ Little Bee is connected to PostgreSQL in two instances. In this first instance, 
 If the entered username and password match, the user will be redirected to the next stage of the application. 
 If not, they will be prompted to try again.
 <br>
+
 ![Feature 1 Screenshot](./docs/SS1.png)
 
 ### View All Children & Filter
 Once the identity of the user has been confirmed, they will be able to select how they would like to view the database. They can view by Room, ID or Name, each triggering an algorithm that will sort and generate each child as a menu option in a sorted manner. 
 <br>
+
 ![Feature 2 Screenshot](./docs/SS2.png)
 
 ### View Child Information
 Last but not least, once a child has been selected through any of the sorting algorithms above, their entire profile will be generated with accurate, real time data.
 <br>
+
 ![Feature 3 Screenshot](./docs/SS3.png)
 
 ## User Interactions
