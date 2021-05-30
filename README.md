@@ -1,14 +1,11 @@
 # Little Bee - Childcare Management System v0.1
----
 A CLI program built completely in Ruby.
 By Ben Flint.
 
 # Github Link
----
 https://github.com/flintzb/little-bee
 
 ## Software Development Plan
----
 ### Description
 Little Bee is a CLI application that allows the client to speak to and read from a database full of information about children within a childcare centre with speed and ease. Each child has a profile that contains information about them and their family, and this information is dynamically pulled from the database at each instance. You could theoretically replace the database with any other database (that has the same column names) and it will work the same!
 This application was developed with the intention of learning how to manipulate a database with Ruby, specifically PostgresQL. It's NOT a requirement for the client to host their own instance of PostgresQL as I have set up a server online using DBaaS providers. I personally used Azure, but there other providers such as AWS, Heroku & ElephantSQL that offer similar offerings.
@@ -24,7 +21,7 @@ The target audience are employees of the childcare industry. Whether it be a:
 In short, the target audience are employees of the childcare industry who are required to access information as a requirement of their role at work.
 
 ## Features
----
+
 ### Secure Login System
 Little Bee is connected to PostgreSQL in two instances. In this first instance, we take the response of the client for "username" and "password" fields and compare them to a previously pulled hash of both fields. Doing it this way, secures our application from SQL injection concerns. 
 If the entered username and password match, the user will be redirected to the next stage of the application. 
@@ -46,7 +43,7 @@ Last but not least, once a child has been selected through any of the sorting al
 ![Feature 3 Screenshot](./docs/SS3.png)
 
 ## User Interactions
----
+
 The user interactions for this application are extensively controlled by the Ruby Gem, "tty-prompt". I chose this gem as it provides an easy form of navigation that is easy to use for both the developer and the client.
 
 1. The user is introduced to a welcome page with the name of the application decorized in colour at the very top. The user is welcomed by: 
@@ -68,14 +65,14 @@ Please navigate the application through the following menu:
 4. Finally, when the user has sorted through the child database, appropriate information about the child will be pulled out in response to the option that has been selected. For example, Selecting the name "Lindon De Lasci" will then look for the child profile with the "ID" attribute of 1. And in response, will print out the appropriate information of the child selected, with no further input required from the user. 
 
 ## Control Flow Diagram
----
+
 ![Control Flow of Little Bee CCMS](./docs/CONFLOW.png)
 
 ## Implemenation (Trello)
----
+
 
 ## Installation
----
+
 To run this application simply put 
 ```
 bash little_bee.sh
