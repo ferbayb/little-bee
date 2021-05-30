@@ -1,36 +1,27 @@
-require 'pg'
-require 'sequel'
-require_relative '../classes/classUser.rb'
+# frozen_string_literal: true
 
-def db_connect    
-    # host = String('topsy.db.elephantsql.com')
-    # database = String('rzffyrvr')
-    # user = String('rzffyrvr')
-    # port = 5432
-    # password = String('ADsfbAJTndN2BkM5mNGTcgGKCZwkEHSD')
-    db = Sequel.connect ENV['postgres://rzffyrvr:ADsfbAJTndN2BkM5mNGTcgGKCZwkEHSD@topsy.db.elephantsql.com/rzffyrvr'] || 'postgres://localhost/contacts'
-end
+# require postgres gem
+require 'pg'
+# require sequel gem for database control
+require 'sequel'
+# require class, user.
+require_relative '../classes/class_user'
+# require class, child
+require_relative '../classes/class_child'
+# declare database constant
+DB = Sequel.connect('postgres://flintzb:flintzb@us-mm-west-ed217cabc0f5.g5.cleardb.net:5432/users_db')
 
 def load_db(value)
-    #connect to database
-    db = db_connect("users_db")
-    #run SQL query in database. 
-    query = "SELECT * FROM #{value}"
-    db_results = db.exec(query)
-    #create object from each listing
-    case value
-    when "login_db"
-        db_results.each do |listing|
-            User.new(listing)
-        end
-    when "child_db"
-        db_results.each do |listing|
-            ChildProfile.new(listing)
-        end
+  case value
+  when 'login_db'
+    db_table = DB[:login_db]
+    db_table.all.each do |listing|
+      User.new(listing)
     end
-    #close connection
-    db.close
-    #puts "#{value} Database Loaded, Delete This Message Before Shipping"
+  when 'child_db'
+    db_table = DB[:child_db]
+    db_table.all.each do |listing|
+      ChildProfile.new(listing)
+    end
+  end
 end
-
-puts db_connect
