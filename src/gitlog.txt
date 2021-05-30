@@ -1,0 +1,83 @@
+commit 7f4367db9d4bfb1a3b3577c34208166153a13846
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 17:54:34 2021 +1000
+
+    add bash script
+
+commit 0b50cb98f10238434a0cacf250089dc07dd78245
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 17:09:30 2021 +1000
+
+    add colorized
+
+commit 12d1553288c77c64e3cdc0d01a4ec6aa0bc013b0
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 12:48:19 2021 +1000
+
+    add database files
+
+commit 8366b235a40454d50043499fb53183154dce9cc5
+Author: Ben F <flintbee@icloud.com>
+Date:   Sun May 30 01:43:02 2021 +1000
+
+    add profile functionality
+
+commit b76658600281565c55c0f167c0493db7c4835453
+Author: Ben F <flintbee@icloud.com>
+Date:   Sat May 29 23:48:04 2021 +1000
+
+    add rooms and age functionality
+
+commit 9979ccb354afd8d308b81ce268acbc66d17f184b
+Author: Ben F <flintbee@icloud.com>
+Date:   Sat May 29 08:03:40 2021 +1000
+
+    add sorting functionality
+
+commit f2ea13985e4e7a5a9c8b0c34e3a83a39feedaa93
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 05:49:10 2021 +1000
+
+    add navigation menu prompt
+
+commit e26a0ec139cb7edfa3333b81f3c9d37308c39a2e
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 05:42:48 2021 +1000
+
+    add working username and password verification algorithms
+
+commit f6f1ff3b31e3bb91e0ab7cf62c9df5344e521dec
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 02:30:53 2021 +1000
+
+    add working database preload and class connection
+
+commit 487e4c1aab78f7d54d853e0906137303d7f43e11
+Author: Ben F <flintbee@icloud.com>
+Date:   Thu May 27 01:00:03 2021 +1000
+
+    add individual database loading
+
+commit 1d34d476923baec71c12e061d67e460f909b10c3
+Author: Ben F <flintbee@icloud.com>
+Date:   Wed May 26 19:51:51 2021 +1000
+
+    add postgres connection
+
+commit 768b326ff870992f319ef2768f20dae217a7a165
+Author: Ben F <flintbee@icloud.com>
+Date:   Tue May 25 12:46:41 2021 +1000
+
+    add Family class
+
+commit 094865e73f4cab2a7a105aa2df5cee8c98b09c9c
+Author: Ben F <flintbee@icloud.com>
+Date:   Mon May 24 20:16:42 2021 +1000
+
+    add initial file structure
+
+commit 59456cfb1ed4d7f2551420b79bbf7a2dce0da4cb
+Author: Ben F <flintbee@icloud.com>
+Date:   Mon May 24 20:09:55 2021 +1000
+
+    Initial commit
