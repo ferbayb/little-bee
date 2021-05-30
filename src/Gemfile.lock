@@ -19,6 +19,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
+    sequel (5.44.0)
     span (0.1.2)
     tty-color (0.6.0)
     tty-cursor (0.7.1)
@@ -39,6 +40,7 @@ DEPENDENCIES
   colorize (~> 0.8.1)
   pg (~> 1.2, >= 1.2.3)
   rspec
+  sequel
   span
   tty-prompt (~> 0.23.1)
 

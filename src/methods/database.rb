@@ -1,8 +1,14 @@
 require 'pg'
+require 'sequel'
 require_relative '../classes/classUser.rb'
 
-def db_connect(value)
-    PG.connect( dbname: value)
+def db_connect    
+    # host = String('topsy.db.elephantsql.com')
+    # database = String('rzffyrvr')
+    # user = String('rzffyrvr')
+    # port = 5432
+    # password = String('ADsfbAJTndN2BkM5mNGTcgGKCZwkEHSD')
+    db = Sequel.connect ENV['postgres://rzffyrvr:ADsfbAJTndN2BkM5mNGTcgGKCZwkEHSD@topsy.db.elephantsql.com/rzffyrvr'] || 'postgres://localhost/contacts'
 end
 
 def load_db(value)
@@ -26,3 +32,5 @@ def load_db(value)
     db.close
     #puts "#{value} Database Loaded, Delete This Message Before Shipping"
 end
+
+puts db_connect
