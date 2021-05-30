@@ -69,24 +69,28 @@ Please navigate the application through the following menu:
 ![Control Flow of Little Bee CCMS](./docs/CONFLOW.png)
 
 ## Implemenation - Evolution of Trello
+Link to the board can be found [here](https://trello.com/b/MVZcBdyE/little-bee)
+
+
+### Initial Trello Board
 ![Trello 0](./docs/TR0.png)
 
-
+### Day 1
 ![Trello 1](./docs/TR1.png)
 
-
+### Day 2
 ![Trello 2](./docs/TR2.png)
 
-
+### Day 3
 ![Trello 3](./docs/TR3.png)
 
-
+### Day 4
 ![Trello 4](./docs/TR4.png)
 
-
+### Day 5
 ![Trello 5](./docs/TR5.png)
 
-
+### Day 6
 ![Trello 6](./docs/TR6.png)
 
 ## Installation
