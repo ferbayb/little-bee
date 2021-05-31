@@ -116,3 +116,14 @@ bundle install
 ```
 ruby main.rb
 ```
+
+Since I didn't have time to create unique passwords for everyone in my class. To access the program, you can use my login username and password:
+```
+user: Ben
+pass: neB
+```
+Similarly, if you ARE a current student or a teacher in my class, I have created logins in the same manner:
+```
+users: Ash, Teej, Alex, Nandini, Jack, Arm, Russ, Alastair, Etc..
+passes: shA, jeeT, xelA, inidnaN, kcaJ, mrA, ssuR, riatsalA, Etc..
+```
